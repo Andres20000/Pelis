@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Disk (0.6.3)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Disk (~> 0.6.3)
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Disk
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Disk: 76cccb6fed1c27cd661bbdea7b117d887c2f72e5
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+
+PODFILE CHECKSUM: 34e0150619c9765397a8fb95200af4ae0eaeb371
+
+COCOAPODS: 1.5.3
