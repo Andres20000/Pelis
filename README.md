@@ -10,6 +10,9 @@ Algunas Aclaraciones
 * No encontré ninguna película con video en Vimeo, ese pedazo esta sin probar. 
 * El modelo de datos de la app quedó “amarrado” a la estructura de datos de  TMdB. Eso facilitó algunos aspectos, pero soy consiente que limita la escalabilidad de la  app, por ejemplo, sí se quisiera tener varias fuentes de datos.  El problema no mencionaba nada respecto a cosas así y preferí ser pragmático.  
 
+Instrucciones para compilar:
+Descargar este repositorio pero también el repositorio: Andres20000/Pods  y agregar la carpets Pods al mismo nivel del .xcworkspace.
+
 
 
 1. Capas de la aplicación: 
