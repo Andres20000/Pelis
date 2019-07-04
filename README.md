@@ -19,21 +19,33 @@ En general como  la mayoría las  aplicaciones iOS sigue el patrón Modelo-Vista
 * Una capa que llamo “El Modelo” que su función básica es definir la estructura de datos y en este caso, que el tamaño de la app es pequeño, se encarga de hacer manejar la lógica de negocio, de la carga de la información de las películas y su persistencia. Acá se encuentran las siguientes clases:
 
 Modelo:  Este es el corazón de esta app, maneja toda la lógica de descarga, de persistencia y provee los métodos necesarios para el acceso a la info de los controladores. (Sigue el patrón singleton) 
+
 Pelicula:  Define la estructura de una película es sus aspectos básicos.
+
 PeliculaDetalle: Define la estructura de una película en detalle.
+
 Video: Define la estructura de datos que se necesitan para visualizar un video
+
 Crew :  Define la estructura de datos de un miembro del equipo que realizó la película. 
+
 ResumenTitulos:  Esta estructura sirve para las búsquedas locales. Cada vez que se ve el detalle de una película, se almacena en un arreglo con elementos de este tipo, el id y el titulo de la película. Cuando se esta offline, se acude a esta estructura para hacer las búsquedas. Por ahora solo hace búsquedas por palabras en el titulo pero se podría extender fácil a otros elementos. 
+
 MDBConfiguracion: Define información básica que provee TMdB, en este caso las url de los  tamaños de las imágenes. 
+
 MDBConfiguracionBase:   Estructura utilitaria necesario para descargar MDBConfiguracion
+
 PagedCategoryResponse:  Esta estructura modela  las solicitudes al API de una lista de películas.  
 
 * La capa de Controladores, que son todos los UIViewControllers, TableViewControllers etc. 
 
 PeliculasVC:  Despliega una lista  de películas. En principio podrían ser miles.  
+
 CeldaPelicula: Son las Celdas usadas por  PeliculasVC, para pintar cada película.
+
 BuscarPeliculasTableViewController: Permite hacer búsquedas online/offline de peliculas
+
 DetallePeliculaViewController: Despliega el detalle de un película y controla la forma reproducir un video (YouTube/Vimeo)
+
 YouTubeVC: Reproduce un video de Youtube usando un webview. 
 
 * La capa ViewModel que cuando se necesite se puede usar para descargar de trabajo al controlador
