@@ -31,8 +31,8 @@ PagedCategoryResponse:  Esta estructura modela  las solicitudes al API de una li
 * La capa de Controladores, que son todos los UIViewControllers, TableViewControllers etc. 
 
 PeliculasVC:  Despliega una lista  de películas. En principio podrían ser miles.  
-CeldaPelicula. Son las Celdas usadas por  PeliculasVC, para pintar cada película.
-BuscarPeliculasTableViewController. Permite hacer búsquedas online/offline de peliculas
+CeldaPelicula: Son las Celdas usadas por  PeliculasVC, para pintar cada película.
+BuscarPeliculasTableViewController: Permite hacer búsquedas online/offline de peliculas
 DetallePeliculaViewController: Despliega el detalle de un película y controla la forma reproducir un video (YouTube/Vimeo)
 YouTubeVC: Reproduce un video de Youtube usando un webview. 
 
